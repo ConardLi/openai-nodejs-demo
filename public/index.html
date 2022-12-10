@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>自动生成图片</title>
+    <link href="./index.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 style="margin-top: 0">自动生成图片</h1>
+    <!-- 输入模型和提示的表单 -->
+    <form>
+      <div>
+        <label for="model">模型：</label>
+        <input type="text" id="model" name="model" value="image-alpha-001">
+      </div>
+      <div>
+        <label for="prompt">提示：</label>
+        <input type="text" id="prompt" name="prompt" value="你好，世界！">
+      </div>
+      <button>生成图片</button>
+    </form>
+    <!-- 图片展示区域 -->
+    <div id="image-container">
+      <img id="image" src="" alt="生成的图片">
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
